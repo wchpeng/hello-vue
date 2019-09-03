@@ -4974,8 +4974,8 @@ istanbul-reports@^1.5.1:
 
 iview@^3.5.0-rc.1:
   version "3.5.0-rc.1"
-  resolved "https://registry.yarnpkg.com/iview/-/iview-3.5.0-rc.1.tgz#25df93d200e7fd7ff9005511be6fdafcd25a2fdd"
-  integrity sha512-gll+0sfRjkYbHwUDaHoX2+x0fDFR5lkOE5q0uX8kCjFOL7WepTNrMFVyzw1F1LOsfZfV0lfTIcJRSIkQWq7iKg==
+  resolved "https://registry.npm.taobao.org/iview/download/iview-3.5.0-rc.1.tgz#25df93d200e7fd7ff9005511be6fdafcd25a2fdd"
+  integrity sha1-Jd+T0gDn/X/5AFURvm/a/NJaL90=
   dependencies:
     async-validator "^1.10.0"
     deepmerge "^2.2.1"
@@ -9468,6 +9468,11 @@ vue@^2.5.2:
   version "2.6.10"
   resolved "https://registry.yarnpkg.com/vue/-/vue-2.6.10.tgz#a72b1a42a4d82a721ea438d1b6bf55e66195c637"
   integrity sha512-ImThpeNU9HbdZL3utgMCq0oiMzAkt1mcgy3/E6zWC/G6AaQoeuFdsl9nDhTDU3X1R6FK7nsIUuRACVcjI+A2GQ==
+
+vuex@^3.1.1:
+  version "3.1.1"
+  resolved "https://registry.npm.taobao.org/vuex/download/vuex-3.1.1.tgz#0c264bfe30cdbccf96ab9db3177d211828a5910e"
+  integrity sha1-DCZL/jDNvM+Wq52zF30hGCilkQ4=
 
 w3c-hr-time@^1.0.1:
   version "1.0.1"

@@ -2,7 +2,8 @@ import Vue from 'vue'
 import Router from 'vue-router'
 // import iView from 'iview'
 
-import HelloWorld from '@/components/HelloWorld'
+// import HelloWorld from '@/components/HelloWorld'
+import longyongyi from '../components/home/longyongyi'
 import jinyong from '../components/jinyong'
 import gulong from '../components/gulong'
 import huangyi from '../components/huangyi'
@@ -15,16 +16,32 @@ var router = new Router({
     {
       path: '/',
       name: 'HelloWorld',
-      component: HelloWorld
+      redirect: '/home',
+      component: longyongyi,
+      children: [{
+        path: 'home',
+        icon: 'ios-home',
+        name: 'home',
+        title: '龙蛹蚁',
+        component: resolve => {
+          require(['../components/home/longyongyi.vue'], resolve)
+        }
+      }]
     },
     {
       path: '/jinyong',
       name: 'jinyong',
       title: '金蛹',
-      component: jinyong,
-      children: [
-
-      ]
+      component: jinyong
+      // children: [{
+      //   path: 'app-report',
+      //   icon: 'md-folder',
+      //   name: 'app-report',
+      //   title: '耗时报表',
+      //   component: resolve => {
+      //     require(['../components/report/report.vue'], resolve)
+      //   }
+      // }]
     },
     {
       path: '/gulong',
